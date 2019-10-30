@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Опитування</title>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Повернутися назад</a>
+  </nav>
+  <header>
+    <h1>Місце соціальних мереж в житті сучасної молоді</h1>
+  </header>
+  <section>
+    <form action="https://formspree.io/xlerwyqp"
+          method="POST">
+      <fieldset style="width:200px; height:400px;">
+        <legend>Особисті дані:</legend>
+          <label>Ім'я<br>
+             <input type="text" name="name" placeholder="Name">
+          </label>
+          <br>
+          <br>
+          <label>Прізвище<br>
+             <input type="text" name="last-name" placeholder="Last Name">
+          </label>
+          <br>
+          <br>
+          <label>Електронна пошта<br>
+             <input type="email" name="email" placeholder="Email">
+          </label>
+          <br>
+          <br>
+          <label>Номер телефону<br>
+             <input type="number" name="number" placeholder="Phone number">
+          </label>
+          <br>
+          <br>
+          <p>Ваша стать?</p>
+          <label>
+             <input type="radio" name="gender" value="male">Чоловік
+          </label>
+          <label>
+             <input type="radio" name="gender" value="female">Жінка
+          </label>
+         <br>
+         <p>Ваш вік?</p>
+         <select name="age">
+             <option value="less-than-20">менше 20 років</option>
+             <option value="20-30" selected>20-30 років</option>
+             <option value="31-40">31-40 років</option>
+             <option value="41-50">41-50 років</option>
+             <option value="more than 50"> більше 50 років</option>
+      </select>
+      </fieldset>
+      <br>
+      <h3>Чи користуєтеся Ви соціальними мережами в Інтернеті?</h3>
+         <input type="radio" name="use" value="yes" checked>Так<br>
+         <input type="radio" name="use" value="no">Ні<br>
+         <input type="radio" name="use" value="rarely">У мене є профіль, але я рідко користуюсь ним.<br>
+      <br>
+      <hr>
+      <h3>Що для Вас є соціальні мережі (виберіть декілька відповідей)?</h3>
+         <input type="checkbox" name="vehicle1" value="comunication">Засіб спілкування<br>
+         <input type="checkbox" name="vehicle2" value="information">Джерело цікавої інформації<br>
+         <input type="checkbox" name="vehicle3" value="time">Спосіб витрачання часу<br>
+         <input type="checkbox" name="vehicle4" value="entertainment">Місце для розваг<br>
+         <input type="checkbox" name="vehicle5" value="new-people">Можливість познайомитись з новими людьми<br>
+         <input type="checkbox" name="vehicle6" value="self-expression">Можливість самовираження<br>
+         <input type="checkbox" name="vehicle7" value="Car">Свій варіант<br>
+         <input type="text" name="vehicle7" placeholder="Введіть відповідь">
+      <br>
+      <hr>
+      <h3>Якою соціальною мережею Ви користуєтеся найчастіше?</h3>
+      <input list="social-networks" name="social-network">
+      <datalist id="social-networks">
+         <option value="Facebook">
+         <option value="Twitter">
+         <option value="Instagram">
+         <option value="Вконтакті">
+         <option value="Однокласники">
+         <option value="Інша">
+      </datalist>
+      <hr>
+       <h3>Скільки часу на день Ви проводите в соціальній мережі?</h3>
+       <p>(відповідь потрібно вказати у хвилинах)</p>
+         <input type="number" name="quantity" min="0" max="1440" step="60" value="30">
+      <hr>
+      <br>
+      <h3>Дякуємо, що взяли участь у нашому соціологічному опитуванні</h3>
+        <input type="submit" value="ВІДПРАВИТИ АНКЕТУ">
+        <input type="reset" value="Очистити">
+    </form>
+  </section>
+
+
+  <hr>
+  <section>
+  <h3>Оцініть якість роботи сервісу</h3>
+      <form action="https://formspree.io/xlerwyqp"
+            method="POST"
+            oninput="result.value=parseInt(a.value)">
+         <input type="range" name="a" value="100"/>
+         <output name="result">100</output>
+         <br>
+         <input type="submit" value="ВІДПРАВИТИ">
+      </form>
+  </section>
+  <br>
+  <section>
+    <h3>Ваша точка зору важлива для нас</h3>
+    <p>Якщо у Вас є якісь пропозції чи запитання будь ласка залиште свій коментар</p>
+    <form action="https://formspree.io/xlerwyqp"
+          method="POST">
+      <textarea name="message" rows="10" cols="50" placeholder="Введіть текст повідомлення"></textarea>
+    <br>
+    <p>Прикріпити файл:<input type="file" name="my-file">
+    <br>
+    <br>
+    <input type="submit" value="КОМЕНТУВАТИ">
+    </form>
+  </section>
+
+
+  <br>
+  <footer>
+    <nav>
+       <a href="index.html">Головна</a>
+    </nav>
+    <p>© 2019, Ruslana Iusypiuk</p>
+  </footer>
+</body>
+</html>
